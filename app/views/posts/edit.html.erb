@@ -1,0 +1,7 @@
+<h1> Edit Post</h1>
+<%= bootstrap_form_for(@post, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-6") do |form| %>
+  <%= form.text_field :image_link %>
+  <%= form.text_field :title %>
+  <%= form.text_area :description %>
+  <%= form.submit %>
+<% end %>
